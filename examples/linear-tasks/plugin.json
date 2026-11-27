@@ -1,0 +1,8 @@
+{
+  "source": "linear",
+  "description": "Linear teams and issues",
+  "auth": "per-user-token",
+  "capabilities": ["tasks"],
+  "atomicClaim": false,
+  "atomicClaims": false
+}

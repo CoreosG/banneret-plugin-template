@@ -48,3 +48,5 @@ BANNERET_CHECK_TOKEN=demo-alice BANNERET_CHECK_PEER_TOKEN=demo-bob \
 The fork's TypeScript kit is an unpublished workspace package. We vendor its Zod schemas and the upstream checker source together so a clean installation can test the same contract without a monorepo checkout or a release download. The exact fork commit and upstream MIT license are in `vendor/kit`. To update both from a fork tag that contains the checker, run `bash scripts/refresh-kit.sh TAG`, inspect the changes and run `pnpm check`. A full commit SHA also works.
 
 [Plugin contract](https://github.com/CoreosG/banneret-hub/blob/main/docs/banneret/plugins.md) · [Kit and checker source](https://github.com/CoreosG/banneret-hub/tree/main/packages/banneret-plugin-kit) · [Fork releases](https://github.com/CoreosG/banneret-hub/releases)
+
+See the [Linear task provider](examples/linear-tasks/README.md) for an example backed by Linear teams and issues.
