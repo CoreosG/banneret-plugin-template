@@ -9,8 +9,8 @@
   "scripts": {
     "start": "node src/main.ts",
     "typecheck": "tsc --noEmit",
-    "lint": "oxlint src scripts",
-    "test": "node --test src/providers/*.test.ts",
+    "lint": "oxlint src scripts examples",
+    "test": "node --test src/providers/*.test.ts examples/linear-tasks/*.test.ts",
     "conformance": "node scripts/conformance.ts",
     "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm conformance"
   },

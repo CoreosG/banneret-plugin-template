@@ -7,5 +7,5 @@
     "allowImportingTsExtensions": true,
     "skipLibCheck": true
   },
-  "include": ["src", "scripts", "vendor/kit/src"]
+  "include": ["src", "scripts", "examples", "vendor/kit/src"]
 }

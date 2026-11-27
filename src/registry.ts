@@ -9,14 +9,14 @@ import {
 export function registry(server: McpServer, prefix: string) {
   return function register<N extends keyof typeof tools>(
     name: N,
-    run: (args: ToolInput<N>) => ToolOutput<N>,
+    run: (args: ToolInput<N>) => ToolOutput<N> | Promise<ToolOutput<N>>,
   ) {
     const { input, output } = tools[name];
     server.registerTool(
       prefix + name,
       { inputSchema: input as z.ZodObject },
-      (args) => {
-        const result = output.parse(run(input.parse(args) as ToolInput<N>));
+      async (args) => {
+        const result = output.parse(await run(input.parse(args) as ToolInput<N>));
         return {
           structuredContent: result,
           content: [{ type: "text", text: JSON.stringify(result) }],
