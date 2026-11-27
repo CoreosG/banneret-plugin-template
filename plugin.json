@@ -1,0 +1,7 @@
+{
+  "source": "starter",
+  "description": "An in-memory board, skill library and notebook",
+  "capabilities": ["tasks", "skills", "memory"],
+  "auth": "per-user-token",
+  "atomicClaim": true
+}
