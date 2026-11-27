@@ -1,0 +1,1 @@
+# Banneret plugin template
