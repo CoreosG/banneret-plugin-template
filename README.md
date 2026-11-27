@@ -50,3 +50,5 @@ The fork's TypeScript kit is an unpublished workspace package. We vendor its Zod
 [Plugin contract](https://github.com/CoreosG/banneret-hub/blob/main/docs/banneret/plugins.md) · [Kit and checker source](https://github.com/CoreosG/banneret-hub/tree/main/packages/banneret-plugin-kit) · [Fork releases](https://github.com/CoreosG/banneret-hub/releases)
 
 See the [Linear task provider](examples/linear-tasks/README.md) for an example backed by Linear teams and issues.
+
+See the [shared Markdown memory provider](examples/markdown-memory/README.md) to serve company project notes from a git-backed folder.
