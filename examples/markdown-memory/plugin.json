@@ -1,0 +1,6 @@
+{
+  "source": "markdown-memory",
+  "description": "Shared project notes in a Markdown folder",
+  "capabilities": ["memory"],
+  "auth": "service"
+}

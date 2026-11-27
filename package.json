@@ -10,19 +10,19 @@
     "start": "node src/main.ts",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint src scripts examples",
-    "test": "node --test src/providers/*.test.ts examples/linear-tasks/*.test.ts",
+    "test": "node --test src/providers/*.test.ts examples/*/*.test.ts",
     "conformance": "node scripts/conformance.ts",
     "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm conformance"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.32.2",
+    "yaml": "2.9.0",
     "zod": "4.6.5"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^22",
     "oxlint": "1.95.0",
-    "typescript": "~5.9.3",
-    "yaml": "2.9.0"
+    "typescript": "~5.9.3"
   }
 }
